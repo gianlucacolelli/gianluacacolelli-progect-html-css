@@ -54,7 +54,6 @@ list-style: none;
 .nav__links li a{
     transition: all 0.3s ease 0s;
 }
-
 .nav__links li a:hover{
     color: blueviolet;
 }
@@ -67,7 +66,6 @@ list-style: none;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
@@ -85,105 +83,24 @@ list-style: none;
 .cta:hover{
     background-color:blueviolet;
 }
-.pu{
-    position: absolute;
-    float: left;
-    -webkit-filter: blur(5px);
-    filter: blur(px);
-    margin:20px;
-    top: 10%;
-}
-.pu:hover{
-    filter: none;
-    transition: 1s;
-    width: 1100px; 
-}
-
-.text-container{
-    font-family: 'PT Mono', monospace;
-    font-size: 80px;
-    height: 1300px;
-    background-color: grey;
-    background-image:url(/assets/img/247775ac578f7cb785edc417e595269f.jpg)
-}
-
-.presentation{
-    position: absolute;
-    top: 85%;
-    right: 10%;
-    color: white;
-}
-.skill{
+.spazio{
     width: auto;
-    height: 300px;
+    height: 120px;
+}
+
+.article_container{
     font-family:'Roboto', sans-serif;
+    width: 800px;
+    height: 2000px;
     display: flex;
     justify-content: center;
-    font-size: 30px;
-    align-items: center;
-    color: rgb(43, 43, 87);
+    margin: auto;
 }
- .boxe-container{
-     height: auto;
-     display: flex;
-     flex-direction: row;
-     justify-content: center;
- }
- .boxe1{
-     background-color: red;
-     width: 600px;
-     height: 400px;
-     margin-left: 20px;
-     margin-right: 20px;
+h1{
+    font-size: 3pc;
+    text-align: center;
+    padding: 30px;
 }
-
-.image{
-    width: 600px;
-    height: 400px;
-     object-fit: cover
-
-}
-
-.boxe2{
-    background-color: rgb(255, 255, 255);
-    width: 600px;
-    height: 400px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.boxe3{
-    background-color: rgb(0, 17, 255);
-    width: 600px;
-    height: 400px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.text-containter1{
-    display: flex;
-    justify-content: center;
-}
-
-.descrizione{
-    font-family:'Roboto', sans-serif;
-    color: rgb(43, 43, 87);
+p{
     font-size: 20px;
-    width: 100%;
-    width: 600px;
-    height: 600px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
 }
-
-.text-containter2{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(0, 0, 0);
-    height: 100px;
-}
-
-    
-
-
