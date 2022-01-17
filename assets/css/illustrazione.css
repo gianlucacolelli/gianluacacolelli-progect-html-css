@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@600&family=PT+Mono&family=Roboto:wght@500&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@600&family=PT+Mono&family=Roboto:wght@500&family=Yellowtail&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
@@ -87,14 +87,14 @@ opacity: 1;
 }
 .row {
     font-family: 'Roboto', sans-serif;
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox; 
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
+    -ms-flex-wrap: wrap; 
     flex-wrap: wrap;
     padding: 0 4px;
   }
 .column {
-    -ms-flex: 25%; /* IE10 */
+    -ms-flex: 25%; 
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -111,8 +111,11 @@ opacity: 1;
     transition: 1s;   
 }
 h1{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     margin: 40px;
+    color:rgb(43, 43, 87);
 }
 #void{
     width: 100%;
@@ -155,7 +158,7 @@ nav .menu-btn i{
 input[type="checkbox"]{
     display: none;
 }
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 960px){
 *{
         box-sizing: border-box;
         margin: 0;

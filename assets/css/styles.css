@@ -248,7 +248,8 @@ nav .menu-btn i{
 input[type="checkbox"]{
     display: none;
 }
-@media only screen and (max-width: 400px){
+
+@media only screen and (max-width: 960px){
     *{
         box-sizing: border-box;
         margin: 0;
