@@ -82,7 +82,7 @@ nav{
 .cta:hover{
     background-color:blueviolet;
 }
-.spazio{
+.space{
     height: 150px;
 }
 .article_container{
@@ -102,6 +102,9 @@ nav{
 h1{
     text-align: center;
     color:rgb(43, 43, 87);
+}
+.text-separe{
+    margin-bottom: 30px;
 }
 #void{
     width: 100%;
@@ -193,7 +196,7 @@ nav ul li{
 #click:checked ~ ul{
     left: 0%;
 }
-.spazio{
+.space{
     height: 200PX;
 }
 h1{
