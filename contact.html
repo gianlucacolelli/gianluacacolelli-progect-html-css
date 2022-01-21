@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/assets/css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="contact" method="post">
+        <h3>Contact</h3>
+        <fieldset>
+          <input
+            placeholder="Your name"
+            type="text"
+            tabindex="1"
+            required
+            autofocus
+            class="username"
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Email Address"
+            type="email"
+            tabindex="2"
+            required
+            class="email"
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Type your message here...."
+            tabindex="5"
+            required
+            class="message"
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button
+            name="submit"
+            type="submit"
+            id="contact-submit"
+            data-submit="...Sending"
+            class="submit"
+          >
+            Invia
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- loader -->
+    <div class="loader">
+      <img
+        src="https://media.giphy.com/media/MEiZ5h8lOkM7rwideE/giphy.gif"
+        alt=""
+      />
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_WlLKwMpD7xrHfbUh4T8Ao");
+})();
+</script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+
+
+
+function validate(){
+    let loader = document.querySelector(".loader")
+    let name = document.querySelector(".username")
+    let email = document.querySelector(".email")
+    let msg = document.querySelector(".message")
+    let submit = document.querySelector(".submit");
+
+    submit.addEventListener("click", (e)=> {
+        e.preventDefault()
+
+        if(name.value == "" || email.value == "" || msg. 
+        value == ""){
+         imputempty();   
+        }
+        else{
+            loader.style.display = "flex";
+            sendmail(name.value, email.value, msg.value)
+            success();
+            loader.style.display = "none";
+        }
+    })
+}
+validate()
+
+
+function sendmail(name, email, msg){
+        emailjs.send("service_53s9cih","template_vg987nu",{
+           name: name,
+           email: email,
+           msg: msg,
+});
+  
+
+}
+
+
+
+       function error() {
+        swal({
+          title: "Oops...",
+          text: "Something went wrong, message could not be sent!",
+          icon: "error",
+          button: "OK!",
+        });
+      }
+
+      function success() {
+        swal({
+        title: "Good job!",
+        text: "You sent the message!",
+        icon: "success",
+       button: "OK!",
+       });
+      }
+      function imputempty() {
+        swal({
+          icon: "error",
+          title: "Oops...",
+          text: "Fields cannot be empty!",
+        });
+      }
+
+    </script>
+  </body>
+</html>
