@@ -103,7 +103,7 @@ h1{
     text-align: center;
     color:rgb(43, 43, 87);
 }
-.text-separe{
+.article_container .article p {
     margin-bottom: 30px;
 }
 #void{

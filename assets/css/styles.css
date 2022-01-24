@@ -35,7 +35,7 @@ header{
 nav{
     display: flex;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 4;
     list-style: none;  
 }
 
@@ -87,25 +87,31 @@ nav{
     filter: blur(px);
     margin:20px;
     top: 10%;
+   width: 800px;
 }
 .pu:hover{
     filter: none;
     transition: 1s;
-    width: 1100px; 
+    width: 900px; 
 }
 
 .text-container{
     font-family: 'PT Mono', monospace;
     font-size: 80px;
-    height: 1300px;
-    background-color: grey;
-    background-image:url(/assets/img/247775ac578f7cb785edc417e595269f.jpg)
+    height: 1100px;
+    background-color: rgb(0, 0, 0);
+}
+.text-container img{
+    object-fit: cover;
+    width: 100%;
 }
 
 .presentation{
     position: absolute;
-    top: 85%;
+    width: 60%;
+    top:90%;
     right: 10%;
+    font-size: 60px;
     color: white;
 }
 .skill{
@@ -131,8 +137,8 @@ nav{
     padding: 20px;
 }
  .card{
-     width: 600px;
-     height: 400px;
+     width: 500px;
+     height: 300px;
      padding: 2rem 1rem;
      background-color: #fff;
      position: relative;
